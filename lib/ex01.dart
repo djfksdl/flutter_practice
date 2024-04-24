@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_practice/ex02.dart';
 
 class Ex01 extends StatelessWidget {
   const Ex01 ({super.key});
@@ -13,7 +14,11 @@ class Ex01 extends StatelessWidget {
           size: 67.2,
           color:Color(0xffff0000)),
       floatingActionButton: FloatingActionButton(
-        onPressed: (){} , ) ,
+        onPressed: (){
+          print("다음페이지로 이동");
+          Navigator.pushNamed(context, "/02");
+        } ,
+        child: Icon(Icons.next_plan),) ,
       );
   }
 }

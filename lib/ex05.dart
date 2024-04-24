@@ -15,11 +15,20 @@ class Ex05 extends StatelessWidget {
             child: Text("첫번째 글자", style: TextStyle(fontSize: 24),)
           ),
           Container(
-            width: 200,
-            color: Color(0xFF0000ff),
+            width: 150,
+            color: Color(0xFF00ff00),
             child: Text("두번째 글자", style: TextStyle(fontSize: 24),),
           ),
-          Text("세번째 글자", style: TextStyle(fontSize: 24),)
+          Container(
+              width: 150,
+              color: Color(0xFF0000ff),
+              child: Text("세번째 글자", style: TextStyle(fontSize: 24),),
+          ),
+          ElevatedButton(onPressed: (){
+            print("5페이지 이동");
+            Navigator.pushNamed(context, "/06");
+          }, child: Icon(Icons.ice_skating))
+
         ],
       ),
     );

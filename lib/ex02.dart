@@ -15,7 +15,10 @@ class Ex02 extends StatelessWidget {
           color: Color(0xffff0000),
         ) ,
       ),
-      floatingActionButton: FloatingActionButton(onPressed: (){},),
+      floatingActionButton: FloatingActionButton(onPressed: (){
+        print("3페이지로 이동");
+        Navigator.pushNamed(context, "/03");
+      },),
     ) ;
   }
 }
