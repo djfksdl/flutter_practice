@@ -9,7 +9,7 @@ class Ex12 extends StatelessWidget {
       appBar: AppBar(title: Text("전화번호 실습"),),
       body: Container(
         width: 500,
-        color: Color(0xFFcccccc),
+        color: Color(0xFFdddddd),
         padding: EdgeInsets.all(15),
         child: Column(
           children: [
@@ -45,8 +45,8 @@ class Ex12 extends StatelessWidget {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text("휴대전화"),
-                      Text("010-2222-2222",
+                      Text("휴대전화 "),
+                      Text(" 010-2222-2222",
                       style: TextStyle(
                         fontSize: 20,
 
